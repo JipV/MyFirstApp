@@ -63,6 +63,6 @@
   <gap:splash src="www/res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
   <gap:splash src="www/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
   <splash src="www/smileys.jpg"/>
-  <!--<preference name="SplashScreenDelay" value="50000"/>-->
+  <preference name="SplashScreenDelay" value="10000"/>
   <access origin="*"/>
 </widget>
