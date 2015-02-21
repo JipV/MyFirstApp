@@ -39,12 +39,12 @@
 			$("#lijst").hide();
 			$("#info").load("info.html");
 			$("#info").append("<button id='terug_button'>Terug naar overzicht</button>");
-			$("#terug_button").click(function() {
-				toonLijst();
-			});
 			$("#info").show();
 		});
 		
+		$("#terug_button").click(function() {
+			toonLijst();
+		});
 
 		function toonInfo(){
 			/*$("#lijst").hide();
