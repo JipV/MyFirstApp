@@ -64,9 +64,7 @@
 					</ul>
 				</div>
 			</div>
-			<div data-role="main" class="ui-content" id="films_inhoud">
-				
-			</div>
+			<div data-role="main" class="ui-content" id="films_inhoud"></div>
 		</div>	
 		
 		<div data-role="page" id="series_pagina">
@@ -81,25 +79,7 @@
 					</ul>
 				</div>
 			</div>
-			<div data-role="main" class="ui-content">
-				<h3>Series</h3>
-				<ul data-role="listview" data-inset="true">
-					<li><a href="#">
-						<img src="img/logo.png">
-					<h2>Serie 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
-					</li>
-					<li><a href="#">
-						<img src="img/logo.png">
-					<h2>Serie 2</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
-					</li>
-					<li><a href="#">
-						<img src="img/logo.png">
-					<h2>Serie 3</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
-					</li>
-			</div>
+			<div data-role="main" class="ui-content" id="series_inhoud"></div>
 		</div>
 		
 		<div data-role="page" id="tekenfilms_pagina">
@@ -114,25 +94,7 @@
 					</ul>
 				</div>
 			</div>
-			<div data-role="main" class="ui-content">
-				<h3>Tekenfilms</h3>
-				<ul data-role="listview" data-inset="true">
-					<li><a href="#">
-						<img src="img/logo.png">
-					<h2>Tekenfilm 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
-					</li>
-					<li><a href="#">
-						<img src="img/logo.png">
-					<h2>Tekenfilm 2</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
-					</li>
-					<li><a href="#">
-						<img src="img/logo.png">
-					<h2>Tekenfilm 3</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
-					</li>
-			</div>
+			<div data-role="main" class="ui-content" id="tekenfilms_inhoud"></div>
 		</div>
 		
 		<div data-role="page" id="bekeken_films_pagina">
@@ -153,7 +115,9 @@
 		</div>
 
 		<script>
-		$("#films_inhoud").load("films_inhoud.html");
+			$("#films_inhoud").load("films_inhoud.html");
+			$("#series_inhoud").load("series_inhoud.html");
+			$("#tekenfilms_inhoud").load("tekenfilms_inhoud.html");
 		</script>
 	
 		
