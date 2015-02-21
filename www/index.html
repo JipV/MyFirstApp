@@ -64,25 +64,8 @@
 					</ul>
 				</div>
 			</div>
-			<div data-role="main" class="ui-content">
-				<h3>Films</h3>
-				<ul data-role="listview" data-inset="true">
-					<li><a href="info.html">
-						<img src="img/logo.png">
-					<h2>Film 1</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
-					</li>
-					<li><a href="info.html">
-						<img src="img/logo.png">
-					<h2>Film 2</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
-					</li>
-					<li><a href="info.html">
-						<img src="img/logo.png">
-					<h2>Film 3</h2>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
-					</li>
-				</ul>
+			<div data-role="main" class="ui-content" id="films_inhoud">
+				
 			</div>
 		</div>	
 		
@@ -169,6 +152,9 @@
 			</div>
 		</div>
 
+		<script>
+		$("#films_inhoud").load("films_inhoud.html");
+		</script>
 	
 		
     </body>
