@@ -2,7 +2,7 @@
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-<div id="inhoud">
+<div id="lijst">
 
 	<h3>Films</h3>
 
@@ -26,9 +26,31 @@
 
 </div>
 
+<div id="info"></div>
+
 <script>
-	function toonInfo(){
-		$("#inhoud").empty();
-        $("#inhoud").load("info.html");
-	}
+
+	$(function(){ 
+		
+		$("#lijst").show();
+		$("#info").hide();
+
+		function toonInfo(){
+			$("#lijst").hide();
+			$("#info").load("info.html");
+			$("#info").append("<button id='terug_button'>Terug naar overzicht</button>");
+			$("#terug_button").click(function() {
+				toonLijst();
+			});
+			$("#info").show();
+		}
+		
+		function toonInfo(){
+			$("#info").empty();
+			$("#info").hide();
+			$("#lijst").show();
+		}
+		
+	});
+
 </script>
