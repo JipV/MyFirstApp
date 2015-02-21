@@ -7,17 +7,17 @@
 	<h3>Films</h3>
 
 	<ul data-role="listview" data-inset="true">
-		<li><a href="#" onclick="toonInfo(); return false">
+		<li><a href="#" class="toonInfoLink">
 			<img src="img/logo.png">
 			<h2>Film 1</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
 		</li>
-		<li><a href="#" onclick="toonInfo(); return false">
+		<li><a href="#" class="toonInfoLink">
 			<img src="img/logo.png">
 			<h2>Film 2</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
 		</li>
-		<li><a href="#" onclick="toonInfo(); return false">
+		<li><a href="#" class="toonInfoLink"
 			<img src="img/logo.png">
 			<h2>Film 3</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
@@ -33,7 +33,18 @@
 	$(function(){ 
 		
 		$("#lijst").show();
-		$("#info").show();
+		$("#info").hide();
+		
+		$(".toonInfoLink").click(function() {
+			$("#lijst").hide();
+			$("#info").load("info.html");
+			$("#info").append("<button id='terug_button'>Terug naar overzicht</button>");
+			$("#terug_button").click(function() {
+				toonLijst();
+			});
+			$("#info").show();
+		});
+		
 
 		function toonInfo(){
 			/*$("#lijst").hide();
