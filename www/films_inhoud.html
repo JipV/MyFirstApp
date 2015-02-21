@@ -17,7 +17,7 @@
 			<h2>Film 2</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
 		</li>
-		<li><a href="#" class="toonInfoLink"
+		<li><a href="#" class="toonInfoLink">
 			<img src="img/logo.png">
 			<h2>Film 3</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p></a>
@@ -26,7 +26,7 @@
 
 </div>
 
-<div id="info">Hello</div>
+<div id="info"></div>
 
 <script>
 
@@ -38,7 +38,7 @@
 		$(".toonInfoLink").click(function() {
 			$("#lijst").hide();
 			$("#info").load("info.html");
-			$("#info").append("<button id='terug_button'>Terug naar overzicht</button>");
+			$("#info").append("<input type='button' id='terug_button' value='Terug naar overzicht'>");
 			$("#info").show();
 		});
 		
