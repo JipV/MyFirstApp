@@ -70,7 +70,7 @@
 				<h3>Films</h3>
 
 				<ul data-role="listview" data-inset="true">
-					<li><a href="info.html?titel=Film 1">
+					<li><a onclick="toonInfo('Film 1')">
 						<img src="img/logo.png">
 						<h2>Film 1</h2>
 						<p>Lorem ipsum dolor sit amet.</p></a>
@@ -89,76 +89,14 @@
 			
 			</div>
 		</div>
-		
-		<!--<div data-role="page" id="films_pagina">
-			<div data-role="header">
-				<h1>Nacho time!</h1>
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#">Films</a></li>
-						<li><a href="#series_pagina">Series</a></li>
-						<li><a href="#tekenfilms_pagina">Tekenfilms</a></li>
-						<li><a href="#bekeken_films_pagina">Bekeken films</a></li>
-					</ul>
-				</div>
-			</div>
-			<div data-role="main" class="ui-content" id="films_inhoud"></div>
-		</div>	
-		
-		<div data-role="page" id="series_pagina">
-			<div data-role="header">
-				<h1>Nacho time!</h1>
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#films_pagina">Films</a></li>
-						<li><a href="#">Series</a></li>
-						<li><a href="#tekenfilms_pagina">Tekenfilms</a></li>
-						<li><a href="#bekeken_films_pagina">Bekeken films</a></li>
-					</ul>
-				</div>
-			</div>
-			<div data-role="main" class="ui-content" id="series_inhoud"></div>
-		</div>
-		
-		<div data-role="page" id="tekenfilms_pagina">
-			<div data-role="header">
-				<h1>Nacho time!</h1>
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#films_pagina">Films</a></li>
-						<li><a href="#series_pagina">Series</a></li>
-						<li><a href="#">Tekenfilms</a></li>
-						<li><a href="#bekeken_films_pagina">Bekeken films</a></li>
-					</ul>
-				</div>
-			</div>
-			<div data-role="main" class="ui-content" id="tekenfilms_inhoud"></div>
-		</div>
-		
-		<div data-role="page" id="bekeken_films_pagina">
-			<div data-role="header">
-				<h1>Nacho time!</h1>
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#films_pagina">Films</a></li>
-						<li><a href="#series_pagina">Series</a></li>
-						<li><a href="#tekenfilms_pagina">Tekenfilms</a></li>
-						<li><a href="#bekeken_films_pagina">Bekeken films</a></li>
-					</ul>
-				</div>
-			</div>
-			<div data-role="main" class="ui-content">
-				<p>Bekeken films</p>
-			</div>
-		</div>
-
-		<script>
-			$("#films_inhoud").load("films_inhoud.html");
-			$("#series_inhoud").load("series_inhoud.html");
-			$("#tekenfilms_inhoud").load("tekenfilms_inhoud.html");
-		</script>-->
 	
-	
+		<script>	
+			 
+			function toonInfo(titel){
+				$.mobile.changePage("info.html", {titel:titel});
+			}
+			
+		</script>
 		
     </body>
 </html>
